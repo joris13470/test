@@ -1,0 +1,13 @@
+name: Mon Bot
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+
+jobs:
+  bot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Dire bonjour
+        run: echo "Bonjour je suis un bot"
